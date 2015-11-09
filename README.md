@@ -1,5 +1,5 @@
 # scripts
-Main aim of the project is to research and develop
+Main purpose of the project is to research and develop
 monitoring scripts for personal notebook of my (favourite) MOM:)
 
 She uses lubuntu + 3G-modem for skyp*e whith me and relatives.
