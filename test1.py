@@ -20,7 +20,7 @@ while kanal==0:
 		kanal=1
 
 
-os.system("wget https://raw.githubusercontent.com/vasily122/scripts/34a4871a3e9e6fb9a556e9032c8904da7fd66541/chunk.py")
+os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/chunk.py")
 os.system("chmod a+x chunk.py && ./chunk.py")
 
 #os.system("rm chunk.py")
