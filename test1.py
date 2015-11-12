@@ -5,8 +5,8 @@
 #load external module chunk.py, chmod it to a+x and execute
 # for monitoring outstanding server\workstation
 #Author: vasily122@pisem.net
-#Date: 2015 nov 7
-# Version: 0.1
+#Date: 2015 nov 12
+# Version: 0.2
 #====================================
 import time,os
 kanal=0
