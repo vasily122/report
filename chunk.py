@@ -3,7 +3,7 @@
 #====================================
 #Prog: external uploaded command module 
 #Author: vasily122@yandex.ru
-#Date: 2015 nov 7
+#Date: 2015 nov 12
 # Version: 0.1
 #====================================
 import os
