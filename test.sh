@@ -1,5 +1,6 @@
 #!/bin/bash
 point=sort_$(date +%d_%m_%Y)
+echo $point
 #touch ~/Рабочий\ стол/cleaned$(date +%d_%m_%Y).txt
 #DISPLAY=:0 gdialog --msgbox "SDELAY PERERYV \!" 25 20 > /dev/null
 #rm -R /home/evrosvet/.thumbnails
@@ -7,7 +8,3 @@ point=sort_$(date +%d_%m_%Y)
 # ./test.sh >> ~/Рабочий\ стол/1.txt
 #mkdir ~/to_sort/$point
 #mv ~/Загрузки/*.* ~/to_sort/sort_$(date +%d_%m_%Y)
-
-
-
-echo $point
