@@ -4,7 +4,7 @@
 #Prog:from cron and if network exists
 #load external module chunk.py, chmod it to a+x and execute
 #monitor.py for monitoring outstanding server\workstation
-#Author: vasily122@pisem.net
+#Author: vasily122@yandex.ru
 #Date: 2015 nov 12
 #Version: 0.2
 #====================================
