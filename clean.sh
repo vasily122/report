@@ -1,5 +1,5 @@
 #!/bin/bash
-#2015 oct 28 v 1.0
+#2015 nov 18 v 1.1
 point=sort_$(date +%d_%m_%Y)
 library=/home/evrosvet/LIBRARY/
 #echo $point
@@ -12,8 +12,11 @@ mkdir ~/to_sort/$point/arch
 
 #--- sort files by type in daily sort dir ---
 mv ~/Загрузки/*.jpg ~/to_sort/$point/pics
+mv ~/Загрузки/*.JPG ~/to_sort/$point/pics
 mv ~/Загрузки/*.jpeg ~/to_sort/$point/pics
+mv ~/Загрузки/*.JPEG ~/to_sort/$point/pics
 mv ~/Загрузки/*.png ~/to_sort/$point/pics
+mv ~/Загрузки/*.PNG ~/to_sort/$point/pics
 mv ~/Загрузки/*.gif ~/to_sort/$point/pics
 
 mv ~/Загрузки/*.txt ~/to_sort/$point/txt
