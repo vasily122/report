@@ -8,3 +8,8 @@ echo $point
 # ./test.sh >> ~/Рабочий\ стол/1.txt
 #mkdir ~/to_sort/$point
 #mv ~/Загрузки/*.* ~/to_sort/sort_$(date +%d_%m_%Y)
+
+#!/bin/bash
+for i in {howto,stoks,book,search,info,prog,phys,micro,linux} 
+do  mkdir $i ;
+done
