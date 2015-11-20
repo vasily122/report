@@ -4,6 +4,6 @@
 #Prog: 
 #Author: vasily122@yandex.ru
 #Date: 2015 nov 7
-# Version: 0.0
+#Version: 0.0
 #====================================
 import time,os
