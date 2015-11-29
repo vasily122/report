@@ -3,8 +3,8 @@
 #====================================
 #Prog: external uploaded command module 
 #Author: vasily122@yandex.ru
-#Date: 2015 nov 12
+#Date: 2015 nov 29
 # Version: 0.1
 #====================================
 import os
-os.system("""(uname -a && date && df) | mail -s "Activity report" vasily122@yandex.ru""")
+os.system("""(date && df) | mail -s "Activity report by chunk" vasily122@yandex.ru""")
