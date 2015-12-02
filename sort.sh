@@ -1,9 +1,9 @@
 #!/bin/bash
 # sort and move files by TAGS to folder ~/LIBRARY
-# 2015 nov 18 v2
+# 2015 dec 2  v2.1
 
 point=sort_$(date +%d_%m_%Y)
-library=/home/evrosvet/LIBRARY/
+library=/home/evrosvet/LIBRARY
 #ПРАВИЛА
 #howto - полезные инструкции и руководства
 #stoks -  относится к акциям, рынку, деньгам вцелом
@@ -24,7 +24,10 @@ mv -S.bak -v ~/to_sort/$point/arch/*.* ~/to_sort/$point/txt
 for i in {howto,stoks,book,search,info,prog,phys,micro,linux} :
    do mv -S.bak -v ~/to_sort/$point/txt/$i* $library/$i/
 done
-# остатки от сортировки- некатегорированные архивы- в общую папку
+# остатки от сортировки- в общую папку
 mv -S.bak -v ~/to_sort/$point/txt/*.*  $library/
 mv -S.bak -v ~/to_sort/$point/pics/*.* $library/pics
+
+#некатегорированные архивы- в общую папку
+mv -S.bak -v ~/to_sort/$point/*.* $library/
 
