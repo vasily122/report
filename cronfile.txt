@@ -3,10 +3,9 @@
 # 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
 # 
 # m h  dom mon dow   command
-#@reboot /home/arina122/DO/./report.py
-#26 7 * * * /home/arina122/DO/./test1.py
+#@reboot ~/DO/./report.py
+#26 7 * * * ~/DO/test1.py
 
-30 * * * * DISPLAY=:0 gdialog --msgbox "Расслабление" 25 20 > /dev/null
 55 08 * * * ~/DO/clean.sh
 58 08 * * * ~/DO/sort.sh
 00 15 * * 5 DISPLAY=:0 gdialog --msgbox " -- pochta --" 50 50 > /dev/null

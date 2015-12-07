@@ -3,11 +3,12 @@
 #====================================
 #Prog:from cron and if network exists
 #run report.py to remote monitoring server\workstation
+#report.py converted to monitor.py+sort.sh
 #note: chmod a+x report.py
 #crontab -e : @reboot ~/DO/./report.py
 #Author: vasily122@yandex.ru
-#Date: 2015 nov 20
-#Version: 0.3
+#Date: 2015 dec 7
+#Version: 1.3
 #====================================
 import time,os
 chanel=0

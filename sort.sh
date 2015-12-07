@@ -1,6 +1,11 @@
 #!/bin/bash
-# sort and move files by TAGS to folder ~/LIBRARY
-# 2015 dec 2  v2.1
+#====================================
+#Prog starts by crontab AFTER clean.sh
+#sort and move files by TAGS to folder ~/LIBRARY
+#Autor: vasily122@yandex.ru
+#Date: 2015 dec 7
+#Version: 2.2
+#====================================
 
 point=sort_$(date +%d_%m_%Y)
 library=/home/evrosvet/LIBRARY
@@ -30,4 +35,8 @@ mv -S.bak -v ~/to_sort/$point/pics/*.* $library/pics
 
 #некатегорированные архивы- в общую папку
 mv -S.bak -v ~/to_sort/$point/*.* $library/
+
+#--- report ---
+touch ~/Рабочий\ стол/sorted_$(date +%d_%m_%Y).txt
+#todo: probably create some log-file? etc...  
 

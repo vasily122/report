@@ -30,3 +30,4 @@ rm -R /home/evrosvet/.{thumbnails,cache}
 
 #--- report ---
 touch ~/Рабочий\ стол/cleaned$(date +%d_%m_%Y).txt
+#todo: probably create some log-file? etc...

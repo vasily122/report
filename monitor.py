@@ -5,7 +5,7 @@
 #load external module chunk.py, chmod it to a+x and execute
 #monitor.py is for remote monitoring server\workstation
 #Author: vasily122@yandex.ru
-#Date: 2015 nov 20
+#Date: 2015 dec 7
 #Version: 0.3
 #====================================
 import time,os
@@ -17,5 +17,6 @@ while chanel==0:
 		chanel=1
 # remove old chunk.py, if exist
 os.system("rm chunk.py")
+# to download new command file, make it executable and if ok- snart it
 os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/chunk.py")
 os.system("chmod a+x chunk.py && ./chunk.py")
