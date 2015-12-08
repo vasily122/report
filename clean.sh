@@ -4,8 +4,8 @@
 # смотри файл ПРАВИЛА
 # after cleaning crontab lunch script sort.sh
 #Author: vasily122@yandex.ru
-#Date: 2015 dec 2
-#Version: 1.2
+#Date: 2015 dec 8
+#Version: 1.3
 #====================================
 
 point=sort_$(date +%d_%m_%Y)
@@ -26,7 +26,7 @@ mv ~/Загрузки/*.{rar,RAR,arj,ARJ,zip,ZIP,tar} ~/to_sort/$point/arch
 mv ~/Загрузки/*.* ~/to_sort/$point
 
 #--- REMOVE CACHE and THUMBS ---
-rm -R /home/evrosvet/.{thumbnails,cache}
+#rm -R /home/evrosvet/.{thumbnails,cache}
 
 #--- report ---
 touch ~/Рабочий\ стол/cleaned$(date +%d_%m_%Y).txt
