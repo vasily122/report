@@ -7,7 +7,7 @@
 #note: chmod a+x report.py
 #crontab -e : @reboot ~/DO/./report.py
 #Author: vasily122@yandex.ru
-#Date: 2015 dec 7
+#Date: 2015 dec 8
 #Version: 1.3
 #====================================
 import time,os
@@ -19,4 +19,4 @@ while chanel==0:
 		chanel=1
 os.system("""(date && df) | mail -s "Activity report" vasily122@yandex.ru""")
 
-#TODO next idea is to split report.py to: monitor.py (resident) and chunk.py (download every time,changeble)
+#DONE next idea is to split report.py to: monitor.py (resident) and chunk.py (download every time,changeble)

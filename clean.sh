@@ -5,7 +5,7 @@
 # after cleaning crontab lunch script sort.sh
 #Author: vasily122@yandex.ru
 #Date: 2015 dec 8
-#Version: 1.3
+#Version: 1.4
 #====================================
 
 point=sort_$(date +%d_%m_%Y)
@@ -29,5 +29,5 @@ mv ~/Загрузки/*.* ~/to_sort/$point
 #rm -R /home/evrosvet/.{thumbnails,cache}
 
 #--- report ---
-touch ~/Рабочий\ стол/cleaned$(date +%d_%m_%Y).txt
-#todo: probably create some log-file? etc...
+echo -e "cleaned_$(date +%d_%m_%Y)" >> ~/to_sort/log.txt
+
