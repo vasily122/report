@@ -7,7 +7,6 @@
 # Date: 2015 dec 7
 # Version: 0.2
 #====================================
-
 filename=backup_$(date +%d_%m_%Y)
 tar -czf  /home/evrosvet/$filename.tgz  /home/evrosvet/Mail  /home/evrosvet/.sylpheed-2.0  /home/evrosvet/.purple /home/evrosvet/.Skype
 
