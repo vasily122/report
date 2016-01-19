@@ -8,14 +8,15 @@
 # Version: 0.2
 #====================================
 filename=backup_$(date +%d_%m_%Y)
-tar -czf  /home/evrosvet/$filename.tgz  /home/evrosvet/Mail  /home/evrosvet/.sylpheed-2.0  /home/evrosvet/.purple /home/evrosvet/.Skype
+prefix=~/
+tar -czf  $prefix/$filename.tgz  $prefix/Mail  $prefix/.sylpheed-2.0  $prefix/.purple $prefix/.Skype
 
 #cd /mnt/backup
-#sudo tar cvpzf /home/evrosvet/backup_`date +%Y.%m.%d_%H_%M`.tgz --exclude=/media --exclude=/proc --exclude=/lost+found --exclude=/mnt  --exclude=/home --exclude=/sys / >> /dev/null 2>&1
+#sudo tar cvpzf $prefix/backup_`date +%Y.%m.%d_%H_%M`.tgz --exclude=/media --exclude=/proc --exclude=/lost+found --exclude=/mnt  --exclude=/home --exclude=/sys / >> /dev/null 2>&1
 
 #--- REMOVE CACHE and THUMBS ---
-rm -R /home/evrosvet/.thumbnails
-rm -R /home/evrosvet/.cache
+rm -R $prefix/.thumbnails
+rm -R $prefix/.cache
 
 #--- report ---
 touch ~/Рабочий\ стол/saved_$(date +%d_%m_%Y).txt
