@@ -14,7 +14,7 @@ library=~/LIBRARY
 mv -S.bak -v ~/to_sort/$point/arch/*.* ~/to_sort/$point/txt
 # -- {..} taken from skel.sh
 for i in {arch,book,draw,howto,info,linux,micro,phys,prog,search,stoks,radio,hack} :
-   do mv -S.bak -v ~/to_sort/$point/txt/$i* $library/$i/    
+   do mv -S.bak -v ~/to_sort/$point/txt/$i* $library/$i/
 done
 # остатки от сортировки- в общую папку
 mv -S.bak -v ~/to_sort/$point/txt/*.*  $library/
