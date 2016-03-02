@@ -11,6 +11,6 @@
 20 09 * * * ~/DO/sort.sh
 #
 30 09 * * * DISPLAY=:0 gdialog --msgbox "СОХРАНИ LIBRARY" 25 20 > /dev/null
-30 09 * * * ~/DO/bkplib.sh
+30 09 3 * * ~/DO/bkplib.sh
 #
 00 15 * * 5 DISPLAY=:0 gdialog --msgbox " -- pochta --" 50 50 > /dev/null
