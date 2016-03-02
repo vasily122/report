@@ -4,8 +4,13 @@
 # 
 # m h  dom mon dow   command
 #@reboot ~/DO/./report.py
-#26 7 * * * ~/DO/test1.py
-
-55 08 * * * ~/DO/clean.sh
-58 08 * * * ~/DO/sort.sh
+30 9-18 * * 1-6 DISPLAY=:0 gdialog --msgbox "Измерь ..." 25 20 > /dev/null
+#
+15 09 * * * DISPLAY=:0 gdialog --msgbox "___СОРТИРОВКА___" 25 20 > /dev/null
+16 09 * * * ~/DO/clean.sh
+20 09 * * * ~/DO/sort.sh
+#
+30 09 * * * DISPLAY=:0 gdialog --msgbox "СОХРАНИ LIBRARY" 25 20 > /dev/null
+30 09 * * * ~/DO/bkplib.sh
+#
 00 15 * * 5 DISPLAY=:0 gdialog --msgbox " -- pochta --" 50 50 > /dev/null
