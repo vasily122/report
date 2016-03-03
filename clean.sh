@@ -27,8 +27,7 @@ prename 's/__/-/g' ~/Загрузки/*.*               #--- change pairs of def
 #--- sort files by type in daily sort dir ---
 mv ~/Загрузки/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF} ~/to_sort/$point/pics
 mv ~/Загрузки/*.{txt,TXT,pdf,PDF,djvu,odt} ~/to_sort/$point/txt
-mv ~/Загрузки/*.{rar,RAR,arj,ARJ,zip,ZIP,tar,7z,gz,bz2,tgz} ~/to_sort/$point/arch
-# deb
+mv ~/Загрузки/*.{rar,RAR,arj,ARJ,zip,ZIP,tar,7z,gz,bz2,tgz,deb} ~/to_sort/$point/arch
 #--- any other not selected ---
 mv ~/Загрузки/*.* ~/to_sort/$point
 #--- report ---
