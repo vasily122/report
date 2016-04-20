@@ -14,3 +14,23 @@
 41 09 1,10,20 * * ~/DO/bkplib.sh
 50 09 1,10,20 * * DISPLAY=:0 gdialog --msgbox "ПЕРЕНЕСИ LIBRARY в РЕЗЕРВ" 25 20 > /dev/null
 0 10 1,10,20 * * tar -cvzpf backup.tar.gz /home/.backup
+=======================2016apr20========================================
+30 9-17 * * 1-5 DISPLAY=:0 gdialog --msgbox "Измерь ДАВЛЕНИЕ" 25 20 > /dev/null
+50 8 * * * (date ; uptime ) | mail -s "SatS50 is online" vasily122@yandex.ru
+#
+15 09 * * 1-5 DISPLAY=:0 gdialog --msgbox "___СОРТИРОВКА___" 25 20 > /dev/null
+16 09 * * 1-5 ~/DO/clean.sh
+00 15 * * 1-5 DISPLAY=:0 gdialog --msgbox " -- GET MAIL --" 50 50 > /dev/null
+#
+#every friday backup / with rsync = week backup
+30 09 * * 5 DISPLAY=:0 gdialog --msgbox "__BACKUP__" 25 20 > /dev/null
+31 09 * * 5 rsync -aulv -x / /home/.backup/
+#
+#every 1,10,20 day of month at 10:00 backup copy of rsync folder = month backup
+40 09 1,10,20 * * DISPLAY=:0 gdialog --msgbox "__BACKUP__" 25 20 > /dev/null
+0 10 1,10,20 * * ~/DO/bkpsys.sh
+#
+#41 09 1,10,20 * * ~/DO/bkplib.sh
+50 09 1,10,20 * * DISPLAY=:0 gdialog --msgbox "LIBRARY в РЕЗЕРВ" 25 20 > /dev/null
+#
+=================================================================
