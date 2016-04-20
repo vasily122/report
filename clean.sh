@@ -9,7 +9,7 @@
 #====================================
 library=~/LIBRARY
 folder=~/Загрузки
-#-- TO DO: put in cycle for i in {..} 
+#-- TODO: put in cycle for i in {..} 
 prename 's/\s+/-/g' $folder/*.*              #--- remove spaces ---
 prename 's/\,/-/g' $folder/*.*               #--- change defis to underline --
 prename 's/\)/-/g' $folder/*.*               #--- remove brackets ---
@@ -21,6 +21,7 @@ prename 's/\~/-/g' $folder/*.*               #--- remove ~
 prename 's/--/-/g' $folder/*.*               #--- change pairs of defises
 prename 's/__/-/g' $folder/*.*               #--- change pairs of defises
 #--- move all files with tags ---
+#-- TODO: if folder doesn`t exist- create it
 for i in {arch,book,draw,howto,info_,linux,micro,phys,prog,search,stoks,radio,hack} :
    do mv -S.bak -v $folder/$i* $library/$i/
 done
