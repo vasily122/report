@@ -7,4 +7,4 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(date && uptime && df && netstat -t) | mail -s "Activity report" vasily122@yandex.ru""")
+os.system("""(date ; ls -la /var/lib/boinc-client) | mail -s "Activity report" vasily122@yandex.ru""")
