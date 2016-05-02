@@ -7,4 +7,4 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(date ; ls -la /var/lib/boinc-client) | mail -s "Activity report" vasily122@yandex.ru""")
+os.system("""(date ; cat /var/lib/boinc-client/stderrdae.txt cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "Activity report" vasily122@yandex.ru""")
