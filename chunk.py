@@ -12,4 +12,4 @@ import os
 
 #os.system("""(date ; tail /var/lib/boinc-client/stderrdae.txt; report-hw)| mail -s "system data" vasily122@yandex.ru""")
 
-os.system("""(date; uptime)| mail -s "system data" vasily122@yandex.ru""")
+os.system("""(date; uptime)>>log.txt""")
