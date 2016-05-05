@@ -11,4 +11,4 @@ import os
 #os.system("""(date ; tail /var/lib/boinc-client/stderrdae.txt; tail /var/lib/boinc-client/stdoutdae.txt; tail /var/lib/boinc-client/time_stats_log)| mail -s "Activity report" vasily122@yandex.ru""")
 #os.system("""(date ; tail /var/lib/boinc-client/stderrdae.txt; report-hw)| mail -s "system data" vasily122@yandex.ru""")
 #os.system("""(date; uptime)>>log.txt""")
-os.system("""sudo killall boinc; ps ax | mail -s "PS boinc" vasily122@yandex.ru""")
+os.system("""sudo killall boinc | mail -s "PS boinc" vasily122@yandex.ru""")
