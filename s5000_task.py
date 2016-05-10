@@ -7,4 +7,4 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(date;uptime;lshw;inxi -Abo 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
+os.system("""(date;uptime;lshw;inxi -AbD 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
