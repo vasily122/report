@@ -7,4 +7,4 @@
 # Version: 0.3
 #====================================
 import os
-#os.system("""(date;uptime;df) | mail -s "s5000 task" vasily122@yandex.ru""")
+os.system("""(date;uptime;report-hw) | mail -s "s5000 task" vasily122@yandex.ru""")
