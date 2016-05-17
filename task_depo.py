@@ -9,4 +9,4 @@
 import os
 #os.system("""(date;uptime;lshw;inxi -AbD 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
 #os.system("""(date;sudo dmidecode 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
-os.system("""(date;uptime) | mail -s "deposerv task" vasily122@yandex.ru""")
+#os.system("""(date;uptime) | mail -s "deposerv task" vasily122@yandex.ru""")
