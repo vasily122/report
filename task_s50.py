@@ -8,4 +8,4 @@
 # Version: 0.3
 #====================================
 import os
-os.system(""" (date; uptime; ps ax ) | mail -s "s50 task" vasily122@yandex.ru """)
+#os.system(""" (date; uptime; ps ax ) | mail -s "s50 task" vasily122@yandex.ru """)
