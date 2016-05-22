@@ -7,4 +7,4 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(date;ps ax) | mail -s "Pen4 task" vasily122@yandex.ru""")
+#os.system("""(date;ps ax) | mail -s "Pen4 task" vasily122@yandex.ru""")
