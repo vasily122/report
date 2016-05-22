@@ -10,3 +10,6 @@ import os
 #os.system("""(date;uptime;lshw;inxi -AbD 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
 #os.system("""(date;sudo dmidecode 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
 #os.system("""(date;ps ax) | mail -s "pen3 task" vasily122@yandex.ru""")
+
+os.system("""(date ; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "boinc report" vasily122@yandex.ru""")
+#
