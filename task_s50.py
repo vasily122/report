@@ -9,3 +9,6 @@
 #====================================
 import os
 #os.system(""" (date; uptime; ps ax ) | mail -s "s50 task" vasily122@yandex.ru """)
+
+os.system("""(date ; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "boinc report" vasily122@yandex.ru""")
+#
