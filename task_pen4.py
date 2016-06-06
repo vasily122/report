@@ -7,4 +7,5 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(sync;sync;sync;date;ps ax) | mail -s "Pen4 task" vasily122@yandex.ru""")
+#os.system("""(sync;sync;sync;date;ps ax) | mail -s "Pen4 task" vasily122@yandex.ru""")
+os.system("""(sync;date;uptime; crontab -l) | mail -s "Pen4 task" vasily122@yandex.ru""")
