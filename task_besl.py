@@ -7,4 +7,5 @@
 # Version: 0.4
 #====================================
 import os
-os.system(""" (date; ifconfig; df ) | mail -s "samsung r530 task" vasily122@yandex.ru """)
+os.system("""sync; date >> ~/DO/log.txt """)
+os.system("""(date; ifconfig; df) | mail -s "samsung r530 task" vasily122@yandex.ru""")
