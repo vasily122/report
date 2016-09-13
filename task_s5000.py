@@ -16,7 +16,7 @@ os.system("""(date;  ls -la /var/lib/boinc-client/notices) | mail -s "s5000 ls /
 os.system("""(date;  ls -la /var/lib/boinc-client/projects) | mail -s "s5000 ls /var/lib/boinc-client/projects" vasily122@yandex.ru""")
 os.system("""(date;  ls -la /var/lib/boinc-client/slots) | mail -s "s5000 ls /var/lib/boinc-client/slots" vasily122@yandex.ru""")
 os.system("""(date;  cat /var/lib/boinc-client/statistics_boinc.bakerlab.org_rosetta.xml) | mail -s "s5000 statis" vasily122@yandex.ru""")
-
+os.system("""(date;  mutt -v) | mail -s "s5000 mutt" vasily122@yandex.ru""")
 
 #os.system("""(date;cat /var/lib/boinc-client/stderrdae.txt) | mail -s "s5000 stderrdae.txt" vasily122@yandex.ru""")
 #os.system("""(date; cat /var/lib/boinc-client/stdoutdae.txt) | mail -s "s5000 stdoutdae.txt" vasily122@yandex.ru""")
