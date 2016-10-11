@@ -6,5 +6,5 @@
 # Date: 2016 oct 11
 # Version: 0.3
 #====================================
-#import os
-#os.system(""" (date; uptime; ps ax ) | mail -s "s50 task" vasily122@yandex.ru """)
+import os
+os.system(""" (date; uptime; ps ax ) | mail -s "k50n task" vasily122@yandex.ru """)
