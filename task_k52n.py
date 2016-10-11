@@ -7,4 +7,4 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(date;uptime;ps ax)|mail -s "task k50n" vasily122@yandex.ru """)
+os.system("""(date;uptime;ps ax)|mail -s "task k52n" vasily122@yandex.ru """)
