@@ -8,4 +8,4 @@
 #====================================
 import os
 #os.system("""(sync;sync;sync;date;ps ax) | mail -s "Pen4 task" vasily122@yandex.ru""")
-os.system("""(sync;date;uptime;ps ax) | mail -s "Pen4 test" vasily122@yandex.ru""")
+os.system("""(sync;date;uptime;ps ax) | mail -s "Pen4 test 1" vasily122@yandex.ru""")
