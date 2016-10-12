@@ -1,19 +1,18 @@
 
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*- 
 #====================================
-#Prog starts on @reboot in crontab
-#if network exists then load external module chunk.py, chmod it to a+x and execute
-# NEW: in some period downloads new chank.py during work - like bot 
 #monitor.py is for remote monitoring server\workstation
+#starts on @reboot or in time - set in crontab
+#delate previous module
+#if network exists, load new external module task_<HOSTNAME>.py,
+#makes it executible (chmod a+x) and run
 #Author: vasily122@yandex.ru
-#Date: 2016 may 8
-#Version: 2.1
+#Date: 2016 oct 12
+#Version: 2.2
 #====================================
 import os
-#remove old chunk.py, if exist
-os.system("rm s50_task.py")
-# to download new command file, make it executable and if ok - starts it
-os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/s50_task.py")
-os.system("chmod a+x s50_task.py")
-os.system("python s50_task.py")
+os.system("rm task_s50.py")
+os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/task_s50.py")
+os.system("chmod a+x task_s50.py")
+os.system("python task_s50.py")
