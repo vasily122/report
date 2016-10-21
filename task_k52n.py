@@ -6,5 +6,5 @@
 # Date: 2016 oct 11
 # Version: 0.3
 #====================================
-import os
-os.system("""(sync;date;uptime;ps ax)|mail -s "task k52n" vasily122@yandex.ru """)
+#import os
+#os.system("""(sync;date;uptime;ps ax)|mail -s "task k52n" vasily122@yandex.ru """)
