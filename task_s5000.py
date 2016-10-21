@@ -6,10 +6,12 @@
 # Date: 2016 may 7
 # Version: 0.3
 #====================================
-import os
+#import os
+#os.system("""(sync;date;uptime) | mail -s "s5000 task" vasily122@yandex.ru""")
+
 #os.system("""(date;uptime;lshw;inxi -AbD 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
 #os.system("""(date;sudo dmidecode 2>&1) | mail -s "s5000 task" vasily122@yandex.ru""")
-os.system("""(sync;date;uptime) | mail -s "s5000 task" vasily122@yandex.ru""")
+
 
 #os.system("""(date;  ls -la /var/lib/boinc-client/) | mail -s "s5000 ls /var/lib/boinc-client/" vasily122@yandex.ru""")
 #os.system("""tar -cvf b2.tar /var/lib/boinc-client/ ;  (date; uptime) | mutt -s " S5000 boinc dir" vasily122@yandex.ru -a b2.tar""")
