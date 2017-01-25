@@ -6,5 +6,5 @@
 # Date: 2016 may 7
 # Version: 0.3
 #====================================
-import os
-os.system("""(sync;date;uptime;ps ax) | mail -s "Pen4 task " vasily122@yandex.ru""")
+#import os
+#os.system("""(sync;date;uptime;ps ax) | mail -s "Pen4 task " vasily122@yandex.ru""")
