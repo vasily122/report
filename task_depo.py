@@ -6,8 +6,8 @@
 # Date: 2016 may 7
 # Version: 0.3
 #====================================
-import os
-os.system("""(cat /etc/init.d/boinc-client; cat /etc/default/boinc-client) | mail -s "depo task2" vasily122@yandex.ru""")
+#import os
+#os.system("""(cat /etc/init.d/boinc-client; cat /etc/default/boinc-client) | mail -s "depo task2" vasily122@yandex.ru""")
 
 
 #os.system("""(sync;uptime;date;ps ax) | mail -s "deposerv task" vasily122@yandex.ru""")
