@@ -7,7 +7,7 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(date;ls -la /etc/init.d) | mail -s "depo task1" vasily122@yandex.ru""")
+os.system("""(cat /etc/init.d/boinc-client) | mail -s "depo task2" vasily122@yandex.ru""")
 
 
 #os.system("""(sync;uptime;date;ps ax) | mail -s "deposerv task" vasily122@yandex.ru""")
