@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*- 
 #====================================
 # Prog: external uploaded command module 
@@ -8,4 +8,4 @@
 #====================================
 import os
 os.system("""sync; date >> ~/DO/log.txt """)
-os.system("""(date; df) | mail -s " Mama samsung r530 task" vasily122@yandex.ru""")
+os.system("""(date; ps ax; uptime) | mail -s " Mama samsung r530 task" vasily122@yandex.ru""")
