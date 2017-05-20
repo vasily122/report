@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*- 
 #====================================
 #Prog: 
@@ -6,4 +6,4 @@
 #Date: 2015 nov 7
 #Version: 0.0
 #====================================
-import time,os
+#import time,os
