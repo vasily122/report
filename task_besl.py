@@ -3,9 +3,9 @@
 #====================================
 # Prog: external uploaded command module 
 # Author: vasily122@yandex.ru
-# Date: 2017 may 20
+# Date: 2017 may 23
 # Version: 0.4
 #====================================
 import os
 os.system("""sync; date >> ~/DO/log.txt """)
-os.system("""(date; ps ax; uptime) | mail -s " Mama samsung r530 task" vasily122@yandex.ru""")
+os.system("""(date; df; cat ~/DO/log.txt ) | mail -s " Samsung r530 boot" vasily122@yandex.ru""")
