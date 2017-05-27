@@ -14,15 +14,14 @@ import time,os
 kanal=0
 while kanal==0:
 # === depends from version of ping => for ubuntu 12.04 LTS
-#        b=os.popen("ping -c1 8.8.8.8").read()
+#        b=os.popen("ping -c1 8.8.8.8|grep icmp_seq= ").read()
 #        if(b[68:77] == "icmp_req=" ):
-# === depends from version of ping => iputils-s20161105  or ubuntu 17.04
-	b=os.popen("ping -c1 8.8.8.8|grep icmp_seq= ").read()
-	if(b[23:32] =="icmp_seq="):	
+# === depends from version of ping => iputils-s20161105  on ubuntu 17.04
+        b=os.popen("ping -c1 8.8.8.8|grep icmp_seq= ").read()
+        if(b[23:32] =="icmp_seq="):
                 kanal=1
                 os.system("""python3 ~/DO/./monitor.py""")
-                break
         else:
                 print("sleep...")
                 time.sleep(60)
-#		time.sleep(600)
+#               time.sleep(600)
