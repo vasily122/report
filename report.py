@@ -13,11 +13,12 @@
 import time,os
 kanal=0
 while kanal==0:
-        b=os.popen("ping -c1 8.8.8.8").read()
-        if(b[68:77] == "icmp_req=" ):
-# === TODO depends from version of ping? ===== 
-#	b=os.popen("ping -c1 8.8.8.8|grep icmp_seq= ").read()
-#	if(b[23:32] =="icmp_seq="):	
+# === depends from version of ping => for ubuntu 12.04 LTS
+#        b=os.popen("ping -c1 8.8.8.8").read()
+#        if(b[68:77] == "icmp_req=" ):
+# === depends from version of ping => iputils-s20161105  or ubuntu 17.04
+	b=os.popen("ping -c1 8.8.8.8|grep icmp_seq= ").read()
+	if(b[23:32] =="icmp_seq="):	
                 kanal=1
                 os.system("""python3 ~/DO/./monitor.py""")
                 break
