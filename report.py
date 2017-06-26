@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 #====================================
 # report.py
-# starts in crontab: @reboot /home/toma/DO/./report.py & 
+# starts in crontab: @reboot /home/toma/DO/./report.py &
 #if network exists, then load module ~/DO/./monitor.py
 # USE  Python3 !
 # launch with & !
 #Author: vasily122@yandex.ru
 #Date: 2017 june 26
-#Version: 3.2.0
+#Version: 3.2.1
 #====================================
 import time,os
 kanal=0
@@ -29,3 +29,4 @@ while kanal==0:
                 time.sleep(60)
 #               time.sleep(600)
 print("""report.py done""")
+os.system("""(echo "report done"; date)>>monitor.log""")

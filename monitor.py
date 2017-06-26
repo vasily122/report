@@ -9,7 +9,7 @@
 #makes it executible (chmod a+x) and run
 #Author: vasily122@yandex.ru
 #Date: 2017 june 26
-#Version: 3.0
+#Version: 3.1
 #====================================
 import os
 filename="task_s50.py"
@@ -18,4 +18,4 @@ os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/"+fil
 os.system("chmod a+x "+filename)
 os.system("python3 "+filename)
 print("monitor.py done")
-#os.system("./"+filename)
+os.system("""(echo "monitor done"; date) >> monitor.log""")
