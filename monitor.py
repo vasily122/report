@@ -8,12 +8,14 @@
 #if network exists, load new external module task_<HOSTNAME>.py,
 #makes it executible (chmod a+x) and run
 #Author: vasily122@yandex.ru
-#Date: 2017 may 24
-#Version: 2.2
+#Date: 2017 june 26
+#Version: 3.0
 #====================================
 import os
-os.system("rm task_besl.py")
-os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/task_besl.py")
-os.system("chmod a+x task_besl.py")
-os.system("python3 task_besl.py")
-#os.system("./task_besl.py")
+filename="task_s50.py"
+os.system("rm "+filename)
+os.system("wget https://raw.githubusercontent.com/vasily122/scripts/master/"+filename)
+os.system("chmod a+x "+filename)
+os.system("python3 "+filename)
+print("monitor.py done")
+#os.system("./"+filename)
