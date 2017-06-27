@@ -7,8 +7,8 @@
 # USE  Python3 !
 # launch with & !
 #Author: vasily122@yandex.ru
-#Date: 2017 june 26
-#Version: 3.2.1
+#Date: 2017 june 27
+#Version: 3.3
 #====================================
 import time,os
 kanal=0
@@ -22,11 +22,11 @@ while kanal==0:
         if(b[23:32] =="icmp_seq="):
                 kanal=1
                 os.system("""python3 ~/DO/./monitor.py""")
-                print("""network present""")
+#                print("""network present""")
                 break
         else:
-                print("sleep...")
+#                print("sleep...")
                 time.sleep(60)
-#               time.sleep(600)
-print("""report.py done""")
+
+#print("""report.py done""")
 os.system("""(echo "report done"; date)>>monitor.log""")
