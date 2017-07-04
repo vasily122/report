@@ -7,4 +7,4 @@
 # Version: 0.3.1
 #====================================
 import os
-os.system("""(sync;date;uptime) | mail -s "pen3 task" vasily122@yandex.ru""")
+os.system("""(sync;date;df;uptime) | mail -s "Pen III task" vasily122@yandex.ru""")
