@@ -6,8 +6,8 @@
 # Date: 2016 may 7
 # Version: 0.3
 #====================================
-import os
-os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp ) | mail -s "HP 350 thermal test2" vasily122@yandex.ru""")
+#import os
+#os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp ) | mail -s "HP 350 thermal test2" vasily122@yandex.ru""")
 
 #os.system("""(sync;date;uptime) | mail -s "HP_ml350 task" vasily122@yandex.ru""")
 
