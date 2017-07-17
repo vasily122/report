@@ -7,7 +7,7 @@
 # Version: 0.3
 #====================================
 import os
-os.system("""(sync;date;uptime;ls -R /sys/class/;uptime;ls -R -la /sys/class/thermal ) | mail -s "HP 350 thermal test1" vasily122@yandex.ru""")
+os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp ) | mail -s "HP 350 thermal test2" vasily122@yandex.ru""")
 
 #os.system("""(sync;date;uptime) | mail -s "HP_ml350 task" vasily122@yandex.ru""")
 
