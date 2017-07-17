@@ -8,3 +8,5 @@
 #====================================
 import os
 os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp) | mail -s "Pen III thermal test" vasily122@yandex.ru""")
+os.system("""(date;cat /sys/class/) | mail -s "=== III  vasily122@yandex.ru""")
+
