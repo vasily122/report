@@ -6,8 +6,8 @@
 # Date: 2016 may 7
 # Version: 0.3
 #====================================
-import os
-os.system("""(sync;date;uptime;ls -R /sys/class/;uptime;ls -R -la /sys/class/ ) | mail -s "AQUARIUS thermal test1" vasily122@yandex.ru""")
+#import os
+#os.system("""(sync;date;uptime;ls -R /sys/class/;uptime;ls -R -la /sys/class/ ) | mail -s "AQUARIUS thermal test1" vasily122@yandex.ru""")
 
 #os.system("""(sync;date;uptime) | mail -s "s5000 task" vasily122@yandex.ru""")
 
