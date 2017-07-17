@@ -6,5 +6,5 @@
 # Date: 2017 july 04
 # Version: 0.3.1
 #====================================
-#import os
-#os.system("""(sync;date;df;uptime) | mail -s "Pen III task" vasily122@yandex.ru""")
+import os
+os.system("""(sync;date;uptime) | mail -s "Pen III hot test" vasily122@yandex.ru""")
