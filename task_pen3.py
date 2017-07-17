@@ -7,4 +7,4 @@
 # Version: 0.3.1
 #====================================
 import os
-os.system("""(sync;date;uptime;ls /sys/class/thermal/) | mail -s "Pen III thermal test" vasily122@yandex.ru""")
+os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp) | mail -s "Pen III thermal test" vasily122@yandex.ru""")
