@@ -8,10 +8,12 @@
 # launch with & 
 # Author: vasily122@yandex.ru
 # Date: 2017 oct 04
-# Version: 3.4
+# Version: 3.5
 #====================================
 import time,os
 kanal=0
+#lets wait 5 min before 1 test...
+time.sleep(300)
 while kanal==0:
 # === depends from version of ping => for ubuntu 12.04 LTS
 # === Also works with cable ethrnet
