@@ -3,8 +3,8 @@
 #====================================
 # Prog: external uploaded command module 
 # Author: vasily122@yandex.ru
-# Date: 2017 june 27
-# Version: 0.5
+# Date: 2017 sep 09
+# Version: 0.5.1
 #====================================
 import os
 #os.system("""sync; date >> ~/DO/log.txt """)
