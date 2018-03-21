@@ -28,4 +28,4 @@
 
 #os.system("""(date;cat /var/lib/boinc-client/stderrdae.txt) | mail -s "s5000 stderrdae.txt" vasily122@yandex.ru""")
 #os.system("""(date; cat /var/lib/boinc-client/stdoutdae.txt) | mail -s "s5000 stdoutdae.txt" vasily122@yandex.ru""")
-#os.system("""(date;  cat /var/lib/boinc-client/time_stats_log) | mail -s "s5000 time_stats_log" vasily122@yandex.ru""")
+#os.system("""(date;  cat /var/lib/boinc-client/time_stats_log) | mail -s "s5000 time_stats_log" vasily122@yandex.ru""") 
