@@ -4,7 +4,7 @@
 # Prog: external uploaded command module 
 # Author: vasily122@yandex.ru
 # Date: 2016 oct 11
-# Version: 0.3
+# Version: 0.3.1
 #====================================
 #import os
 #os.system("""(sync;date;uptime;ps ax)|mail -s "task k52n" vasily122@yandex.ru """)
