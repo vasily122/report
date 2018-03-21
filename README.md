@@ -3,12 +3,11 @@ Main purpose of the project is to research and develop
 monitoring scripts for some servers that run BOINC &
 for old notebook of my favourite Mother:)
 
-She uses Lubuntu 12.04lts + 3G-modem for skype whith me and family.
-3G usually has dynamic IP -no ssh, so - communications via email only on reboot
+She uses now Lubuntu 16.04 LTS + 4G-modem for Skype whith me and family.
+3G-4F usually has dynamic IP ,so - communications via email 
+NOTE: some ISP want to put these mails in spam, search and unmark them
 
-NOTE: some ISP want to put these mails in spam...
-
-Also tested in Ubuntu 16.04, 17.04, Debian...
+Also tested in Ubuntu 17.04, Debian 9
 
 Usually to start monitoring i need 3 files:
 1.main script report.py installed in ~/DO
@@ -26,4 +25,4 @@ and get additional reports by mail (different commans for different hosts)
 or stay it empty
 
 TODO:
-- put pure commands to task_{host}.py without python code
+- put pure commands to task_{host}.py without python code(use pure bash, but python present everywhere)
