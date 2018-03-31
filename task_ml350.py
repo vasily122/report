@@ -3,13 +3,13 @@
 #====================================
 # Prog: external uploaded command module 
 # Author: vasily122@yandex.ru
-# Date: 2018 mar 21
-# Version: 0.3.11
+# Date: 2018 mar 31
+# Version: 0.3.12
 #====================================
-import os
+#import os
 #os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp ) | mail -s "HP 350 thermal test2" vasily122@yandex.ru""")
 
-os.system("""(sync;date;uptime; ps ax) | mail -s "HP_ml350 alive test 1" vasily122@yandex.ru""")
+#os.system("""(sync;date;uptime; ps ax) | mail -s "HP_ml350 alive test 1" vasily122@yandex.ru""")
 
 #os.system("""(date;uptime;lshw;inxi -AbD 2>&1) | mail -s "HP_ml350 task" vasily122@yandex.ru""")
 #os.system("""(date;sudo dmidecode 2>&1) | mail -s "HP_ml350 task" vasily122@yandex.ru""")
