@@ -6,8 +6,8 @@
 # Date: 2018apr01
 # Version: 0.3.13
 #====================================
-import os
-os.system("""(date; cat ~/.bash_history ) | mail -s "HP_ml350 history" vasily122@yandex.ru""")
+#import os
+#os.system("""(date; cat ~/.bash_history ) | mail -s "HP_ml350 history" vasily122@yandex.ru""")
 
 #os.system("""(sync;date;uptime;cat /sys/class/thermal/thermal_zone*/temp ) | mail -s "HP 350 thermal test2" vasily122@yandex.ru""")
 #os.system("""(sync;date;uptime; ps ax) | mail -s "HP_ml350 alive test 1" vasily122@yandex.ru""")
