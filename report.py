@@ -3,11 +3,11 @@
 #====================================
 # report.py
 # starts in crontab: @reboot /home/toma/DO/./report.py &
-# if network exists, then load module ~/DO/./monitor.py
+# if network exists, then starts module ~/DO/./monitor.py
 # USE  Python3 
-# launch with & 
+# launch with & in background!
 # Author: vasily122@yandex.ru
-# Date: 2017 oct 04
+# Date: 2018 june 09 (revised)
 # Version: 3.5
 #====================================
 import time,os
