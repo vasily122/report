@@ -7,7 +7,7 @@
 #      0 * * * * python3 /home/...path.../monitor.py
 #Author: vasily122@yandex.ru
 #Date: 2018 september 29
-#Version: 3.3
+#Version: 3.6
 #====================================
 import os
 #set filename for proper server: task_<HOSTNAME>.py
