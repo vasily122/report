@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*- 
-#import os
-#os.system("""(sync;date;uptime;ps ax) | mail -s "Pen 3 responce " vasily122@yandex.ru""")
+import os
+os.system("""(sync;date;uptime;ps ax) | mail -s "Pen3 responce " vasily122@yandex.ru""")
