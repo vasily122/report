@@ -54,10 +54,10 @@ USAGE:
      (hourly)
 
 In file monitor.py string 'filename' sets according to the hostname:
-task_<HOSTNAME>.py
+task_{host}.py
 which will download and execute
   
-3.task_<HOSTNAME>.py -command file specific to host
+3.task_{host}.py-command file specific to host
 If necessary I put additional commands to file task_{host}.py in repository "report"
 to get additional reports by mail (different commans for different hosts)
 or left it empty
