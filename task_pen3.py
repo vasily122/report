@@ -5,4 +5,4 @@ import os
 #os.system("""(date;crontab -l;cat ~/DO/monitor.py)| mail -s "pen3" vasily122@yandex.ru""")
 #os.system("""wget https://raw.githubusercontent.com/vasily122/report/master/monitor.py""")
 #os.system("""ls -la|mail -s "pen3 get monitor" vasily122@yandex.ru""")
-os.system("""(date;python --version;uptime)|mail -s "pen3 python versions" vasily122@yandex.ru""")
+os.system("""(date;python3 --version;uptime)|mail -s "pen3 python versions" vasily122@yandex.ru""")
