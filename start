@@ -1,0 +1,38 @@
+#!/bin/bash
+#echo "-----------------------------------"
+echo "устанавливаем переменные окружения"
+source $HOME/OpenFOAM/OpenFOAM-6/etc/bashrc WM_LABEL_SIZE=64 FOAMY_HEX_MESH=yes
+export
+
+#очистка экрана
+clear
+echo "переменные установлены"
+
+cd $HOME/OpenFOAM/vasily122-6/run/
+echo "рабочая папка изменена"
+
+echo "загрузка кейса"
+#echo "-----------------------------------"
+
+#
+#git clone https://github.com/vasily122/tsey_S09
+echo "-----------------------------------"
+
+echo "открываем кейс"
+cd tsey_S09
+
+# устанавливаем недостающую мягкую ссылку на файл поверхности
+#mkdir $HOME/OpenFOAM/vasily122-6/run/tsey_S09/constant/triSurface
+#ln -s $HOME/OpenFOAM/vasily122-6/orography/terrain.stl constant/triSurface/terrain.stl
+
+
+echo "кейс готов,делаем разметку"
+blockMesh
+snappyHexMesh -overwrite
+#checkMesh
+echo "-----------------------------------"
+echo "разметка завершена"
+
+echo "начинаем вычисления"
+aarPiso
+echo "начинаем вычисления закончены! запустить paraFoam"
