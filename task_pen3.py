@@ -3,9 +3,9 @@
 # 2020apr26
 import os
 #os.system("""rm index.html""")
-os.system("""wget -l0 -E opennet.ru""")
-os.system("""(date;ls) | mail -s "Pentium3" vasily122@yandex.ru""")
-os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
+os.system("""wget -l0 -E interfax.ru""")
+#os.system("""(date;ls) | mail -s "Pentium3" vasily122@yandex.ru""")
+os.system("""(date;ls;cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
 os.system("""rm index.html""")
 #os.system("""(sync; date; uptime; ps ax) | mail -s "PentiumIII" vasily122@yandex.ru""")
 
