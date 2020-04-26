@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-#import os
+# 2020apr26
+import os
+os.system("""wget -l0 -E interfax.ru""")
+os.system("""(cat index.html) | mail -s "PentiumIII" vasily122@yandex.ru""")
 #os.system("""(sync; date; uptime; ps ax) | mail -s "PentiumIII" vasily122@yandex.ru""")
 
 #os.system("""(sync; date; uptime; ps ax; crontab -l; cat ~/DO/monitor.py; cat ~/task_pen3.py) | mail -s "Pen3 " vasily122@yandex.ru""")
