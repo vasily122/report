@@ -5,8 +5,9 @@ import os
 
 os.system("""rm index.html""")
 os.system("""wget opennet.ru""")
-os.system("""(date;ls) | mail -s "Pen3 test 0.13" vasily122@yandex.ru""")
-os.system("""mail -s "Pen3 test 0.13 attach" vasily122@yandex.ru < index.html""")
+#os.system("""(date;ls) | mail -s "Pen3 test 0.13" vasily122@yandex.ru""")
+os.system("""mail -s "Pen3 test 0.14 attach" vasily122@yandex.ru < index.html""")
+os.system("""mail -s "Pen3 test 0.14 attach" -a index.html vasily122@yandex.ru""")
 #os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
 #os.system("""rm index.html""")
 
