@@ -4,8 +4,8 @@
 import os
 
 #os.system("""rm index.html""")
-os.system("""wget -l0 -E interfax.ru""")
-os.system("""(date;ls) | mail -s "Pen3 test 0.8" vasily122@yandex.ru""")
+os.system("""wget opennet.ru""")
+os.system("""(date;ls) | mail -s "Pen3 test 0.9" vasily122@yandex.ru""")
 #os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
 #os.system("""rm index.html""")
 
