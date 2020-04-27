@@ -1,12 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-# 2020apr26
+# 2020apr27
 import os
 
 os.system("""rm index.html""")
 os.system("""wget opennet.ru""")
-os.system("""(date;ls) | mail -s "Pen3 test 0.12" vasily122@yandex.ru""")
-os.system("""(mail -s "Pen3 test 0.12 attach" vasily122@yandex.ru < index.html""")
+os.system("""(date;ls) | mail -s "Pen3 test 0.13" vasily122@yandex.ru""")
+os.system("""mail -s "Pen3 test 0.13 attach" vasily122@yandex.ru < index.html""")
 #os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
 #os.system("""rm index.html""")
 
