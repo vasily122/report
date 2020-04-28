@@ -5,9 +5,14 @@ import os
 
 os.system("""rm index.html""")
 os.system("""lynx --dump opennet.ru""")
+os.system("""mail -s "Pen3 test 0.16 linx" vasily122@yandex.ru < index.html""")
+
+os.system("""rm index.html""")
+os.system("""wget opennet.ru""")
+os.system("""(cat index.html)|mail -s "Pen3 test 0.16 wget" vasily122@yandex.ru""")
+
 #os.system("""(date;ls) | mail -s "Pen3 test 0.13" vasily122@yandex.ru""")
-os.system("""mail -s "Pen3 test 0.16 inline" vasily122@yandex.ru < index.html""")
-os.system("""mail -s "Pen3 test 0.16 attach" index.html vasily122@yandex.ru""")
+
 #os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
 #os.system("""rm index.html""")
 
