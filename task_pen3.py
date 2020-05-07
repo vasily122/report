@@ -3,7 +3,8 @@
 # 2020may07
 
 import os
-os.system("""(sync; date ; uptime; ps ax ;cat /etc/issue; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "Pen3 seti errorfile 1" vasily122@yandex.ru"""
+
+os.system("""(sync; date ; uptime; ps ax ;cat /etc/issue; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "Pen3 seti errors 2" vasily122@yandex.ru""")
 
 ##os.system("""rm index.html""")
 ##os.system("""lynx --dump opennet.ru""")
