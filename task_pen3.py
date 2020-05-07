@@ -5,7 +5,7 @@
 import os
 
 #os.system("""(sync; date ; uptime; ps ax ;cat /etc/issue; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "Pen3 seti errors 2" vasily122@yandex.ru""")
-os.system("""(sync; date; cat /var/lib/boinc-client/stdoutdae.txt)| mail -s "Pen3 seti errors 4" vasily122@yandex.ru""")
+os.system("""(sync; date; ps ax; cat /var/lib/boinc-client/stderrdae.txt)| mail -s "Pen3 seti errors 5" vasily122@yandex.ru""")
 #os.system("""(date; cat .bash_history)| mail -s "Pen3 history" vasily122@yandex.ru""")
 
 ##os.system("""rm index.html""")
