@@ -1,8 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-# 2020apr27
+# 2020may07
 
-#import os
+import os
+os.system("""(sync; date ; uptime; ps ax ; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "Pen3 seti errorfile 1" vasily122@yandex.ru"""
+
 ##os.system("""rm index.html""")
 ##os.system("""lynx --dump opennet.ru""")
 ##os.system("""mail -s "Pen3 test 0.16 linx" vasily122@yandex.ru < index.html""")
