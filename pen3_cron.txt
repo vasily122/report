@@ -1,0 +1,5 @@
+@reboot (date;df;last;dmesg) | mail -s "Pen3 reboot" vasily122@yandex.ru
+30 7 * * * (sync;date; uptime; df) |mail -s "From Pen3- Good morning!" vasily122@yandex.ru  
+#0 */4 * * * ping -c 1 192.168.10.1 >>communication.txt
+#5 */4 * * * ( date; uptime; df ; ps ax ) | mail -s "Pen3 online" vasily122@yandex.ru
+0 * * * * python3 /home/evrosvet/DO/monitor.py
