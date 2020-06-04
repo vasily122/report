@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-# 2020may07
+# 2020june04
 
-#import os
+import os
 
+os.system("""(sync; date ; uptime;cat /etc/resolv.conf;cat /etc/network/interfaces)| mail -s "Pen3 serv network" vasily122@yandex.ru""")
 #os.system("""(sync; date ; uptime; ps ax ;cat /etc/issue; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "Pen3 seti errors 2" vasily122@yandex.ru""")
 #os.system("""(sync; date; ps ax; uptime;cat /var/lib/boinc-client/time_stats_log)| mail -s "Pen3 seti after reload 5" vasily122@yandex.ru""")
 #os.system("""(date; cat .bash_history)| mail -s "Pen3 history" vasily122@yandex.ru""")
