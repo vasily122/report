@@ -1,34 +1,34 @@
+su
+apt-get install sudo
+nano /etc/sudoers
+
 sudo apt-get install exim4 mailutils
 sudo dpkg-reconfigure exim4-config
 
-sudo apt-get install python3 mc elinks mutt boinc-client p7zip-full openssh-server
-sudo nano /etc/group
+sudo apt-get install python3 mc elinks mutt p7zip-full openssh-server
+apt install net-tools
 
-nano /etc/network/interfaces
+sudo nano /etc/network/interfaces
 ---------
-auto lo
-iface lo inet loopback
-
 auto eth0
 iface eth0 inet static
 address 192.168.10.92
 gateway 192.168.10.1
-network 192.168.10.0
-broadcast 192.168.10.255
 netmask 255.255.255.0
 dns-nameservers 83.239.193.3 8.8.8.8
 ---------
-nano /etc/resolv.conf
 
+sudo nano /etc/resolv.conf
+---------
 nameserver 83.239.193.3
 nameserver 8.8.8.8
 nameserver 1.1.1.1
+nameserver 8.8.4.4
 ---------
+sudo systemctl restart networking
 
 ip a
-ip addr add 192.168.1.35/24 dev eth0
 
-apt install net-tools
 route
 netstat -nr
 
@@ -36,4 +36,15 @@ route del default gw 192.168.1.1
 route add default gw 192.168.1.50
 ip r sh
 
-ssh 192.168.10.91 -p2233
+------------
+sudo nano /etc/ssh/sshd_config
+ssh 192.168.10.92 -p2233
+
+crontab -e
+-----------
+@reboot (date;df;last;dmesg) | mail -s "Pen3 reboot" vasily122@yandex.ru
+30 7 * * * (sync;date; uptime; df) |mail -s "From Pen3- Good morning!" vasily122@yandex.ru
+-----------
+
+sudo apt-get install boinc-client
+sudo nano /etc/group
