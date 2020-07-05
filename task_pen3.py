@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-# 2020july03
+# 2020july05
 
-#import os
+import os
 #os.system("""(date; ls -R /var/lib/boinc-client; cat /var/lib/boinc-client/gui_rpc_auth.cfg)| mail -s "pen3 boinc" vasily122@yandex.ru""")
 
 #os.system("""(sync; date;crontab -l;cat ~/DO/monitor.py;ls  ~/DO/;cat /etc/issue; )| mail -s "Pen3 serv files" vasily122@yandex.ru""")
 #os.system("""(sync; date ; uptime; ps ax; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "pen3 milky errors" vasily122@yandex.ru""")
-#os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
+os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
 #os.system("""(date; cat .bash_history)| mail -s "Pen3 history" vasily122@yandex.ru""")
 
 ##os.system("""rm index.html""")
