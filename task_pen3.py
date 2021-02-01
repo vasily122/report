@@ -1,23 +1,20 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-# 2020july06 10:48
+# 2021feb01 09:12
 
-#import os
+import os
+os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
+
 #os.system("""(date; ls -R /var/lib/boinc-client; cat /var/lib/boinc-client/gui_rpc_auth.cfg)| mail -s "pen3 boinc" vasily122@yandex.ru""")
-
 #os.system("""(sync; date;crontab -l;cat ~/DO/monitor.py;ls  ~/DO/;cat /etc/issue; )| mail -s "Pen3 serv files" vasily122@yandex.ru""")
 #os.system("""(sync; date ; uptime; ps ax; cat /var/lib/boinc-client/stderrdae.txt; cat /var/lib/boinc-client/stdoutdae.txt; cat /var/lib/boinc-client/time_stats_log)| mail -s "pen3 milky errors" vasily122@yandex.ru""")
-#os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
 #os.system("""(date; cat .bash_history)| mail -s "Pen3 history" vasily122@yandex.ru""")
-
 ##os.system("""rm index.html""")
 ##os.system("""lynx --dump opennet.ru""")
 ##os.system("""mail -s "Pen3 test 0.16 linx" vasily122@yandex.ru < index.html""")
-
 #os.system("""rm index.html""")
 #os.system("""wget opennet.ru""")
 #os.system("""(cat index.html)|mail -s "Pen3 test 0.16 wget" vasily122@yandex.ru""")
-
 #os.system("""(date;ls) | mail -s "Pen3 test 0.13" vasily122@yandex.ru""")
 #os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
 #os.system("""rm index.html""")
@@ -26,4 +23,4 @@
 #os.system("""(date;crontab -l;cat ~/DO/monitor.py)| mail -s "pen3" vasily122@yandex.ru""")
 #os.system("""wget https://raw.githubusercontent.com/vasily122/report/master/monitor.py""")
 #os.system("""ls -la|mail -s "pen3 get monitor" vasily122@yandex.ru""")
-#os.system("""(date;python3 --version;uptime)|mail -s "pen3 python versions" vasily122@yandex.ru""")
+#os.system("""(date;python3 --version;uptime)|mail -s "pen3 python versions" vasily122@yandex.ru""") 
