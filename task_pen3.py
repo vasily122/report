@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
-# 2021feb01
+# 2021apr26 #2021feb01
 
-#import os
-#os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
+import os
+os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
 
 #os.system("""(date; ls -R /var/lib/boinc-client; cat /var/lib/boinc-client/gui_rpc_auth.cfg)| mail -s "pen3 boinc" vasily122@yandex.ru""")
 #os.system("""(sync; date;crontab -l;cat ~/DO/monitor.py;ls  ~/DO/;cat /etc/issue; )| mail -s "Pen3 serv files" vasily122@yandex.ru""")
