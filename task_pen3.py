@@ -11,14 +11,16 @@ os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yand
 #os.system("""(sync; uptime; ps ax; cat /var/lib/boinc-client/stderrdae.txt; date; cat /var/lib/boinc-client/stdoutdae.txt; date; cat /var/lib/boinc-client/time_stats_log)| mail -s "pen3 milky errors" vasily122@yandex.ru""")
 #os.system("""(date; cat .bash_history)| mail -s "Pen3 history" vasily122@yandex.ru""")
 
+os.system("""rm index.shtml""")
 os.system("""wget opennet.ru/index.shtml""")
-#os.system("""catx --dump opennet.ru""")
-os.system("""(date;ls) |mail -s "Pen3 html test 0.1" vasily122@yandex.ru""")
-#os.system("""rm index.html""")
+
+os.system("""(cat index.shtml) | mail -s "Pentium3 news digest 0.2" vasily122@yandex.ru""")
+#os.system("""(date;ls) |mail -s "Pen3 html test 0.1" vasily122@yandex.ru""")
+
 #os.system("""wget opennet.ru""")
 #os.system("""mail -s "Pen3 test 0.16 wget" vasily122@yandex.ru < index.shtml""")
 #os.system("""(date;ls) | mail -s "Pen3 test 0.13" vasily122@yandex.ru""")
-#os.system("""(cat index.html) | mail -s "Pentium3 news digest" vasily122@yandex.ru""")
+#os.system("""catx --dump opennet.ru""")
 #os.system("""rm index.html""")
 #os.system("""(sync; date; uptime; ps ax) | mail -s "PentiumIII" vasily122@yandex.ru""")
 #os.system("""(sync; date; uptime; ps ax; crontab -l; cat ~/DO/monitor.py; cat ~/task_pen3.py) | mail -s "Pen3 " vasily122@yandex.ru""")
