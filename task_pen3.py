@@ -3,18 +3,19 @@
 #2021feb01
 #2021apr26 - 2021may04 - processor fan died, repaired by Maks
 
-import os
+##import os
 #os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
 
-os.system("""rm index.shtml""")
-os.system("""rm index.html""")
-os.system("""rm news.txt)""")
+#os.system("""rm index.shtml""")
+#os.system("""rm index.html""")
+#os.system("""rm news.txt)""")
 
 #os.system("""wget -O index.html opennet.ru/index.shtml""")
-os.system("""links -dump opennet.ru > news.txt""")
-os.system("""lynks --dump  http://wttr.in/Vladikavkaz > w.txt""")
 
-os.system("""(date;cat w.txt; uptime; cat news.txt) | mail -s "Pentium3 news digest 0.4" vasily122@yandex.ru""")
+##os.system("""links -dump opennet.ru > news.txt""")
+##os.system("""lynks --dump  http://wttr.in/Vladikavkaz > w.txt""")
+
+##os.system("""(date;cat w.txt; uptime; cat news.txt) | mail -s "Pentium3 news digest 0.4" vasily122@yandex.ru""")
 
 #os.system("""(date; ls -R /var/lib/boinc-client; cat /var/lib/boinc-client/gui_rpc_auth.cfg)| mail -s "pen3 boinc" vasily122@yandex.ru""")
 #os.system("""(sync; date;crontab -l;cat ~/DO/monitor.py;ls  ~/DO/;cat /etc/issue; )| mail -s "Pen3 serv files" vasily122@yandex.ru""")
