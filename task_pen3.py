@@ -3,10 +3,11 @@
 #2021feb01
 #2021apr26 - 2021may04 - processor fan died, repaired by Maks
 import os
-os.system("""rm news.txt)""")
+os.system("""(sync; date; ps ax; uptime)| mail -s "pen3 0.5" vasily122@yandex.ru""")
+##os.system("""rm news.txt)""")
 os.system("""wget -O news.txt https://services.swpc.noaa.gov/text/3-day-geomag-forecast.txt""")
 os.system("""links -dump http://wttr.in/Vladikavkaz >> news.txt""")
-os.system("""(sync; date; ps ax; uptime;cat news.txt)| mail -s "pen3 DIGEST" vasily122@yandex.ru""")
+#os.system("""(sync; date; ps ax; uptime;cat news.txt)| mail -s "pen3 DIGEST" vasily122@yandex.ru""")
 
 #os.system("""links -dump https://www.opennet.ru/opennews/ > news.txt""")
 #os.system("""links -dump opennet.ru >> news.txt""")
