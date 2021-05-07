@@ -7,8 +7,8 @@ import os
 
 
 os.system("""rm news.txt)""")
-os.system("""links -dump http://wttr.in/Vladikavkaz > news.txt""")
-
+os.system("""wget -O news.txt https://services.swpc.noaa.gov/text/3-day-geomag-forecast.txt""")
+os.system("""links -dump http://wttr.in/Vladikavkaz >> news.txt""")
 os.system("""(sync; date; ps ax; uptime;cat news.txt)| mail -s "pen3 milkyway" vasily122@yandex.ru""")
 
 #os.system("""links -dump https://www.opennet.ru/opennews/ > news.txt""")
